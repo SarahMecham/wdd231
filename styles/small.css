@@ -19,7 +19,7 @@ header {
     display: grid;
     grid-template-columns: 24px auto 44px;
     padding: 5px 0 5px 10px;
-    align-items: end;
+    align-items: center;
     border-bottom: solid 1px #8FB996;
     column-gap: 8px;
     background-color: #FAFAF5;
@@ -43,6 +43,14 @@ header span {
     border: none;
     color: #2A6041;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger svg {
+    width: 28px;
+    height: 28px;
 }
 
 .hamburger::after {
@@ -82,8 +90,10 @@ header span {
     background-color: #eee;
 }
 
-.navigation a:hover {
+.navigation a:hover, .navigation a:focus {
     background-color: #D0E2D0;
+    outline: 3px solid #2A6041;
+    outline-offset: 2px;
 }
 
 
@@ -95,7 +105,7 @@ h1 {
     color: #2A6041;
 }
 
-/**************************Navigation*****************************/
+/**************************Footer*****************************/
 footer {
     background-color: #FAFAF5;
     padding: 1rem 10px;

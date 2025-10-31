@@ -11,7 +11,7 @@ header {
 }
 
 .navigation {
-    display: block;
+    display: block !important;
     background-color: #8FB996;
 }
 

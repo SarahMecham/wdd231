@@ -3,9 +3,13 @@ const navbutton = document.querySelector('#ham-btn');
 const navlinks = document.querySelector('#nav-bar');
 
 //Toggle show class of and on.
-navbutton.addEventListener('click', () => {
-    navbutton.classList.toggle('show');
-    navlinks.classList.toggle('show');
-});
 
+navbutton.addEventListener('click', () => {
+    const isOpen =navlinks.classList.toggle('show');
+    navbutton.classList.toggle('show');
+
+    navlinks.setAttribute('aria-hidden', !isOpen);
+    navbutton.setAttribute('aria-expaneded', !isOpen);
+    navbutton.setAttribute('aira-label', !isOpen ? 'Close menu' : 'Open menu');
+})
 
