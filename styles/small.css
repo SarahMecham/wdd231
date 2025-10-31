@@ -20,8 +20,9 @@ header {
     grid-template-columns: 24px auto 44px;
     padding: 5px 0 5px 10px;
     align-items: end;
-    border-bottom: solid 1px #ddd;
+    border-bottom: solid 1px #8FB996;
     column-gap: 8px;
+    background-color: #FAFAF5;
 }
 
 header img {
@@ -72,7 +73,7 @@ header span {
 .navigation a {
     display: block;
     padding: .82rem 10px;
-    color: #2A6041;
+    color: #1f4730;
     text-decoration: none;
     border-bottom: solid 1px #ddd;
 }
@@ -88,7 +89,9 @@ header span {
 
 
 h1 {
-    margin-left: 10px;
+    margin: 0;
+    padding: 10px;
+    background-color: #FAFAF5;
     color: #2A6041;
 }
 
@@ -122,4 +125,94 @@ footer {
 .social img {
     width: 22px;
     height: 22px;
+}
+
+/**************************Home*****************************/
+h2 {
+    background-color: #D0E2D0;
+    padding: 10px;
+    text-align: center;
+    color: #2A6041;
+    margin: 0;
+    border-bottom: solid 1px #8FB996;
+}
+
+.about, .photo, .courses {
+    margin: 0;
+    padding: 0;
+}
+
+.about p {
+    background-color: #FAFAF5;
+    padding: 10px;
+    margin: 0;
+    height: auto;
+    color: #1f4730;
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: #FAFAF5;
+}
+
+.courses {
+    background-color: #FAFAF5;
+    border-bottom: solid 1px #8FB996;
+}
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 5px;
+}
+
+.course-card {
+    width: auto;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    color: #2A6041;
+}
+
+.course-card.completed {
+    background-color: #8FB996;
+}
+
+.course-card.incomplete {
+    background-color: #D0E2D0;
+}
+
+.sub-nav-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.sub-nav-menu a {
+    display: inline-block;
+    min-width: 44px;
+    min-height: 44px;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    background-color: #8FB996;
+    color: #2A6041;
+    text-decoration: none;
+}
+
+.sub-nav-menu a:hover {
+    background-color: #D0E2D0;
+}
+
+.sub-nav-menu a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.credit-total {
+    text-align: center;
+    color: #1f4730;
 }

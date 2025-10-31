@@ -7,8 +7,13 @@
 
     <!--Style sheets-->
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
+
+    <!--Java Script-->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 
 </head>
 <body>
@@ -19,13 +24,37 @@
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li><a href="#">News and Events</a></li>
-            <li class="current"><a href="#">Dedicated Temples</a></li>
-            <li><a href="#">Announced Temples</a></li>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
         </ul>
     </nav>
     <main>
-        <h1>Dedicated Temples</h1>
+        <h1>Home</h1>
+        <div class="home">
+            <section class="col about">
+                <h2>About Me</h2>
+                <p>Hi, my name is Sarah.  I live with my husband and kids in South Jordan, Utah.  I have two daughters (19 & 12) and three sons (17, 15, & 9).  I love spending time with my family; they bring me joy!  We love playing games, hiking, biking, and snowboarding/skiing together. 
+                I am an avid runner and mountain biker. I love racing in triathlons and just racing in general. I just ran a half-marathon last Saturday, and after some much-needed rest, I will begin training for my next marathon. I love moving and seeing how far I can go. For personal hobbies, I enjoy cooking, woodworking/building (I have built about 50% of the furniture in my house), and anything crafty (knitting, sewing, painting). I love family history, and it has been the focus of my education. I also enjoy web and computer programming, though they stretch me in ways I never knew possible!</p>
+            </section>
+            <section class="col photo">
+                <h2>Student Photo</h2>
+                <img src="images/profile.webp" alt="Portrait of Sarah Mecham" class="profile-img" width="556" height="776">
+            </section>
+            <section class="courses">
+                <h2>Web Certificate Courses</h2>
+
+                <nav class="sub-nav-menu">
+                    <a href="#">All</a>
+                    <a href="#">WDD</a>
+                    <a href="#">CSE</a>
+                </nav>
+
+                <div class="course-list"></div>
+                <p class="credit-total"></p>
+            </section>
+        </div>
+        
     </main>
     <footer>
         <div class="social">
@@ -39,9 +68,9 @@
                 <img src="images/facebook.svg" alt="Facebook" width="16" height="16">
             </a>
         </div>
-        <p>copyright symbol  and current year</p>
-        <p>Last Modified</p>
+        <p>&copy; <span id="currentyear"></span>♥️ Sarah Mecham ♥️ Utah</p>
+        <p id="lastModified"></p>
     </footer>
-    <script src="scripts/navigation.js" defer></script>
+    
 </body>
 </html>

@@ -12,6 +12,7 @@ header {
 
 .navigation {
     display: block;
+    background-color: #8FB996;
 }
 
 .navigation ul {
@@ -21,5 +22,31 @@ header {
 
 .navigation a {
     border: none;
+}
+
+.home {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    background-color: #FAFAF5;
+}
+
+section {
+    padding: 5px;
+}
+.courses {
+    grid-column: 1/4;
+}
+
+.sub-nav-menu {
+    display: flex;
+    justify-content: space-around;
 }
 }
