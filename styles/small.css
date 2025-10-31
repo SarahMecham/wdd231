@@ -1,11 +1,11 @@
 /******************************Color Scheme*********************************
 Primary: #2A6041 (forest)
 
-Accent: #8FB996 (sage green)
+Accent: #fde5a8 (light amber)
 
 Secondary: #D0E2D0 (herb light)
 
-Neutral: #FAFAF5
+Neutral: #FAFAF5 (off white)
 */
 
 /********************************Site wide**********************************/
@@ -178,11 +178,11 @@ h2 {
 }
 
 .course-card.completed {
-    background-color: #8FB996;
+    background-color: #D0E2D0;
 }
 
 .course-card.incomplete {
-    background-color: #D0E2D0;
+    background-color: #fde5a8;
 }
 
 .sub-nav-menu {
@@ -198,14 +198,14 @@ h2 {
     padding: 10px;
     margin: 5px;
     border-radius: 8px;
-    background-color: #8FB996;
+    background-color: #D0E2D0;
     color: #2A6041;
     font-weight: bold;
     text-decoration: none;
 }
 
 .sub-nav-menu a:hover {
-    background-color: #D0E2D0;
+    background-color: #fde5a8;
 }
 
 .sub-nav-menu a.active {
