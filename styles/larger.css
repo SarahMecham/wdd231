@@ -49,4 +49,8 @@ section {
     display: flex;
     justify-content: space-around;
 }
+
+.sub-nav-menu a {
+    width: 180px;
+}
 }
