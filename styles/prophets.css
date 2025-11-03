@@ -1,0 +1,47 @@
+:root {
+    --primary-color: #223552;
+    --background: #FAF7F2;
+    --accent: #8ab7fa;
+    --border: #141f2f;
+}
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--background);
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 10px;
+}
+
+.card {
+    width: auto;
+    background-color: var(--accent);
+    border: solid 1px var(--border);
+    border-radius: 3px;
+    padding: 10px;
+    box-shadow: 0 2px 8px var(--border);
+}
+
+h2 {
+    text-align: center;
+    font-size: larger;
+    color: var(--primary-color);
+}
+
+p {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.card img {
+    display: block;
+    margin: 0 auto;
+}
+
