@@ -1,0 +1,43 @@
+{
+    "familyName": "Mecham",
+    "moveInDate": "November 27, 2019",
+    "familySize": 7,
+    "visited": true,
+    "individual": [
+        {
+            "name": "Anthony",
+            "gender": "Male",
+            "birthDate": "September 8, 1976"
+        },
+        {
+            "name": "Sarah",
+            "gender": "Female",
+            "birthDate": "July 28, 1980"
+        },
+        {
+            "name": "Keira",
+            "gender": "Female",
+            "birthDate": "June 9, 2006"
+        },
+        {
+            "name": "Harvey",
+            "gender": "Male",
+            "birthDate": "October 8, 2008"
+        },
+        {
+            "name": "Elias",
+            "gender": "Male",
+            "birthDate": "February 19, 2010"
+        },
+        {
+            "name": "Aliya",
+            "gender": "Female",
+            "birthDate": "March 30, 2013"
+        },
+        {
+            "name": "Seth",
+            "gender": "Male",
+            "birthDate": "December 19, 2015"
+        }
+    ]
+}
