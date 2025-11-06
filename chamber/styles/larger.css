@@ -31,4 +31,9 @@
         max-width: 900px;
         margin: 0 auto;
     }
+
+    footer {
+        display: grid;
+        grid-template-columns: .5fr 1fr .5fr;
+    }
 }
