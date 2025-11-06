@@ -1,0 +1,60 @@
+{
+    "business": [
+        {
+            "name": "CopyTec South Jordan",
+            "address": "11506 District Main Dr suite 100",
+            "phone": "(385) 526-3350",
+            "website": "https://copytecsj.com/",
+            "image": "images/copy-tech.webp",
+            "level": 3
+        },
+        {
+            "name": "Oquirrh Mountain Marketplace",
+            "address": "11501 4000 W",
+            "phone": "(801) 858-3851",
+            "website": "https://www.daybreakliving.com/directory/oquirrh-mountain-marketplace.php",
+            "image": "images/oquirrh-mountain-marketplace.webp",
+            "level": 2
+        },
+        {
+            "name": "",
+            "address": "",
+            "phone": "",
+            "website": "",
+            "image": "",
+            "level": ""
+        },
+        {
+            "name": "",
+            "address": "",
+            "phone": "",
+            "website": "",
+            "image": "",
+            "level": ""
+        },
+        {
+            "name": "",
+            "address": "",
+            "phone": "",
+            "website": "",
+            "image": "",
+            "level": ""
+        },
+        {
+            "name": "",
+            "address": "",
+            "phone": "",
+            "website": "",
+            "image": "",
+            "level": ""
+        },
+        {
+            "name": "",
+            "address": "",
+            "phone": "",
+            "website": "",
+            "image": "",
+            "level": ""
+        }
+    ] 
+}
