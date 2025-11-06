@@ -1,0 +1,34 @@
+@media only screen and (min-width: 38rem) {
+    header, main, nav, footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    header {
+        grid-template-columns: 24px auto 1fr;
+    }
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block !important;
+        background-color: #8FB996;
+        background: none;
+        grid-column: 3/4;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    .hero {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}

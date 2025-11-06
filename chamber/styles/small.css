@@ -1,0 +1,114 @@
+/******************************Color Scheme*********************************
+Primary: #2A6041 (forest)
+
+Accent: #fde5a8 (light amber)
+
+Secondary: #D0E2D0 (herb light)
+
+Neutral: #FAFAF5 (off white)
+*/
+
+/********************************Site wide**********************************/
+* {
+    font-family: 'Roboto', 'Lucida Sans', 'Lucida Grande', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2A6041;
+    --accent-color: #fde5a8;
+    --secondary-color: #D0E2D0;
+    --neutral-color: #FAFAF5;
+}
+/*********************************Header***********************************/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    grid-template-rows: auto auto;
+    padding: 5px 0 5px 10px;
+    align-items: center;
+    border-bottom: solid 1px var(--secondary-color);
+    column-gap: 8px;
+    background-color: var(--neutral-color);
+}
+
+.header-content {
+    color: var(--primary-color);
+    font-size: .9rem;
+}
+
+.header img {
+    display: block;
+    width: 24px;
+    height: auto;
+    padding-bottom: 2px;
+}
+
+/**************************Hamburger*****************************/
+.hamburger {
+    background: none;
+    border: none;
+    color: #2A6041;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger svg {
+    width: 28px;
+    height: 28px;
+    display: none;
+}
+
+
+.hamburger::after {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::after {
+    content: "\00D7";
+}
+
+/**************************Navigation*****************************/
+
+.navigation {
+    display: none;
+    transition: opacity 0.3s ease;
+}
+
+.navigation.show {
+    display: block; 
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .82rem 10px;
+    color: #1f4730;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+}
+
+.navigation li.current {
+    background-color: #eee;
+}
+
+.navigation a:hover, .navigation a:focus {
+    background-color: #D0E2D0;
+    outline: 3px solid #2A6041;
+    outline-offset: 2px;
+}
+
+/**************************Hero image*****************************/
+.hero picture,
+.hero img {
+    width: 100%;
+    display: block;
+}
