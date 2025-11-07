@@ -15,7 +15,7 @@ const displayBusiness = (business) => {
         let name = document.createElement("h2");
         let address = document.createElement("p");
         let phone = document.createElement("p");
-        let website = document.createElement("li");
+        let website = document.createElement("a");
 
         card.classList.add("card");
         
@@ -31,7 +31,9 @@ const displayBusiness = (business) => {
 
         phone.innerHTML = `${business.phone}`;
 
-        website.innerHTML = `${business.website}`;
+        website.href = business.website;
+        website.textContent = business.website;
+        website.target = "_blank";
 
         card.appendChild(image);
         card.appendChild(name);

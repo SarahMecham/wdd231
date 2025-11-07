@@ -112,10 +112,26 @@ header {
 }
 
 /**************************Hero image*****************************/
+.hero {
+    position: relative;
+}
+
 .hero picture,
 .hero img {
     width: 100%;
     display: block;
+}
+
+.keynote-btn {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    transform: translate(-40%, -80%);
+    padding: 10px 20px;
+    background: var(--accent-color);
+    color: #173625;
+    border: none;
+    border-radius: 6px;
 }
 
 /**************************Footer*****************************/
@@ -171,4 +187,49 @@ p {
 .social img {
     width: 22px;
     height: 22px;
+}
+
+/**************************Main*****************************/
+body {
+    background-color: var(--neutral-color);
+}
+
+h1 {
+    display: block;
+    margin: 0;
+    padding: 5px 0 5px 10px;
+    text-align: center;
+    color: var(--primary-color);
+    background-color: var(--neutral-color);
+}
+/**************************Directory Cards*****************************/
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    background-color: var(--secondary-color);
+}
+
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--neutral-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 8px var(--primary-color);
+    list-style: none;
+}
+
+.card p, .card a {
+    margin: 5px 0;
+}
+
+.card a {
+    list-style: none;
 }

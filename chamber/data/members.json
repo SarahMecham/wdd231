@@ -2,7 +2,7 @@
     "business": [
         {
             "name": "CopyTec South Jordan",
-            "address": "11506 District Main Dr suite 100",
+            "address": "11506 District Main Dr suite 100, South Jordan, UT, 84095",
             "phone": "(385) 526-3350",
             "website": "https://copytecsj.com/",
             "image": "images/copy-tech.webp",
@@ -10,51 +10,51 @@
         },
         {
             "name": "Oquirrh Mountain Marketplace",
-            "address": "11501 4000 W",
+            "address": "11501 4000 W, South Jordan, UT, 84095",
             "phone": "(801) 858-3851",
             "website": "https://www.daybreakliving.com/directory/oquirrh-mountain-marketplace.php",
             "image": "images/oquirrh-mountain-marketplace.webp",
             "level": 2
         },
         {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "website": "",
-            "image": "",
-            "level": ""
+            "name": "Cubby's Chicago Beef",
+            "address": "11501 S 4000 W #103, South Jordan, UT, 84095",
+            "phone": "(801) 679-3959",
+            "website": "https://www.cubbys.co/",
+            "image": "images/cubbys.webp",
+            "level": 1
         },
         {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "website": "",
-            "image": "",
-            "level": ""
+            "name": "Dentists of South Jordan and Orthodontics",
+            "address": "11501 S 4000 W #101, South Jordan, UT, 84095",
+            "phone": "(801) 701-2120",
+            "website": "https://www.dentistsofsouthjordan.com",
+            "image": "images/dentists-of-sojo.webp",
+            "level": 3
         },
         {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "website": "",
-            "image": "",
-            "level": ""
+            "name": "ICryo",
+            "address": "11521 South 4000 West Suite 106, South Jordan, UT, 84009",
+            "phone": "801-601-1107",
+            "website": "https://icryo.com",
+            "image": "images/Icryo.webp",
+            "level": 2
         },
         {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "website": "",
-            "image": "",
-            "level": ""
+            "name": "Kid Strong",
+            "address": "11515 S 4000 W , South Jordan, UT, 84009",
+            "phone": "801-917-5577",
+            "website": "https://www.kidstrong.com/locations/south-jordan",
+            "image": "images/kidstrong.webp",
+            "level": 1
         },
         {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "website": "",
-            "image": "",
-            "level": ""
+            "name": "Oral Radiologists",
+            "address": "10337 S Fish Hook Rd, South Jordan, UT, 84009",
+            "phone": "617-347-5670",
+            "website": "https://oralradiologists.com/",
+            "image": "images/orad.webp",
+            "level": 3
         }
     ] 
 }
