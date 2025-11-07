@@ -22,8 +22,8 @@ const displayBusiness = (business) => {
         image.setAttribute('src', business.image);
         image.setAttribute('alt', `${business.name}`);
         image.setAttribute('loading', 'lazy');
-        image.setAttribute('width', '100');
-        image.setAttribute('height', '50');
+        image.setAttribute('width', '190');
+        image.setAttribute('height', '100');
 
         name.textContent = `${business.name}`;
 

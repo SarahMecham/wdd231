@@ -20,6 +20,15 @@ Neutral: #FAFAF5 (off white)
     --secondary-color: #D0E2D0;
     --neutral-color: #FAFAF5;
 }
+
+html {
+  font-display: swap;
+}
+
+body {
+    background-color: var(--neutral-color);
+}
+
 /*********************************Header***********************************/
 header {
     display: grid;
@@ -46,6 +55,8 @@ header {
 
 /**************************Hamburger*****************************/
 .hamburger {
+    width: 32px;
+    height: 32px;
     background: none;
     border: none;
     color: var(--primary-color);
@@ -190,8 +201,8 @@ p {
 }
 
 /**************************Main*****************************/
-body {
-    background-color: var(--neutral-color);
+main {
+    min-height: 60vh;
 }
 
 h1 {
@@ -232,4 +243,9 @@ h1 {
 
 .card a {
     list-style: none;
+}
+
+.card img {
+    width: auto;
+    height: auto;
 }
