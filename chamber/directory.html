@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="WDD 231, Week two Assignment: Chamber of Commerce Directory Page. Information about businesses in South Jordan, Utah are located on this page.">
     <meta name="author" content="Sarah Mecham">
     <title>Chamber of Commerce Directory</title>
+
     <!--Preconnect for performance-->
     <link rel="preload" as="image" href="images/sj-hero-small.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- Load the Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    </noscript>
 
     <!--Style sheets-->
     <link rel="stylesheet" href="styles/small.css">
@@ -24,9 +27,9 @@
 
     <!--Open graph meta tags-->
     <meta property="og:title" content="Directory page for Chamber of Commerce">
-    <meta property="og:description" content="A directory for all of the registered busineses in the city of South Jordan, Utah. Users can access information about each business including names, addresses, phone numbers, and websites.">
-    <meta property="og:image" content="">
-    <meta property="og:url" content="">
+    <meta property="og:description" content="A directory for all of the registered busineses in the city of South Jordan, Utah. Users can access information about each business.">
+    <meta property="og:image" content="https://sarahmecham.github.io/wdd231/chamber/directory.html/images/sj-hero-small.webp">
+    <meta property="og:url" content="https://sarahmecham.github.io/wdd231/chamber/directory.html">
 
     <!--Java Script-->
     <script src="scripts/navigation.js" defer></script>

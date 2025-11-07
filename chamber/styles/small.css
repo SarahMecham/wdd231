@@ -19,6 +19,7 @@ Neutral: #FAFAF5 (off white)
     --accent-color: #fde5a8;
     --secondary-color: #D0E2D0;
     --neutral-color: #FAFAF5;
+    --dark-text: #173625;
 }
 
 html {
@@ -102,7 +103,7 @@ header {
 .navigation a {
     display: block;
     padding: .82rem 10px;
-    color: var(--primary-color);
+    color: var(--dark-text);
     text-decoration: none;
     border-bottom: solid 1px var(--secondary-color);
 }
@@ -140,7 +141,7 @@ header {
     transform: translate(-40%, -80%);
     padding: 10px 20px;
     background: var(--accent-color);
-    color: #173625;
+    color: var(--dark-text);
     border: none;
     border-radius: 6px;
 }
