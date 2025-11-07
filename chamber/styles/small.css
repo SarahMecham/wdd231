@@ -246,4 +246,5 @@ h1 {
 .card img {
     width: 190px;
     height: 100px;
+    object-fit: contain;
 }

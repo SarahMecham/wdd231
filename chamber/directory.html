@@ -7,8 +7,10 @@
     <meta name="author" content="Sarah Mecham">
     <title>Chamber of Commerce Directory</title>
 
-    <!--Preconnect for performance-->
-    <link rel="preload" as="image" href="images/sj-hero-small.webp">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Preconnect and preload Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap">
@@ -17,26 +19,26 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
     </noscript>
 
-    <!--Style sheets-->
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="styles/normalize.css">
 
-    <!--Favorite Icon-->
-    <link rel="icon" href="favicon.ico">
+    <!-- Preload hero image for LCP -->
+    <link rel="preload" as="image" href="images/sj-hero-small.webp">
 
-    <!--Open graph meta tags-->
+    <!-- Open Graph -->
     <meta property="og:title" content="Directory page for Chamber of Commerce">
-    <meta property="og:description" content="A directory for all of the registered busineses in the city of South Jordan, Utah. Users can access information about each business.">
-    <meta property="og:image" content="https://sarahmecham.github.io/wdd231/chamber/directory.html/images/sj-hero-small.webp">
-    <meta property="og:url" content="https://sarahmecham.github.io/wdd231/chamber/directory.html">
+    <meta property="og:description" content="A directory for all of the registered businesses in South Jordan, Utah.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
 
-    <!--Java Script-->
+    <!-- JavaScript (deferred) -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/directory.js" defer></script>
-
 </head>
+
 <body>
     <header class="header">
         <img src="images/tree-fill.svg" alt="Site logo" width="16" height="16">
@@ -66,12 +68,19 @@
     </header>
 
     <div class="hero">
-            <picture>
-                <source srcset="images/sj-hero-large.webp" media="(min-width: 1000px)">
-                <source srcset="images/sj-hero-medium.webp" media="(min-width: 500px)">
-                <img src="images/sj-hero-small.webp" alt="South Jordan" width="1500" height="750" fetchpriority="high" decoding="async">
-            </picture>
-            <button class="keynote-btn" aria-label="keynote ticket button">Keynote Tickets</button>
+        <picture>
+            <source srcset="images/sj-hero-large.webp" media="(min-width: 1000px)">
+            <source srcset="images/sj-hero-medium.webp" media="(min-width: 500px)">
+            <img 
+                src="images/sj-hero-small.webp" 
+                alt="South Jordan skyline" 
+                width="1500" 
+                height="750" 
+                fetchpriority="high" 
+                decoding="async">
+        </picture>
+
+        <button class="keynote-btn" aria-label="Purchase keynote tickets">Keynote Tickets</button>
     </div>
 
     <main>
