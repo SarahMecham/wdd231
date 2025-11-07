@@ -12,7 +12,7 @@ const displayBusiness = (business) => {
     business.forEach((business) => {
         let card = document.createElement("section");
         let image = document.createElement("img");
-        let name = document.createElement("h2");
+        let name = document.createElement("h3");
         let address = document.createElement("p");
         let phone = document.createElement("p");
         let website = document.createElement("a");
