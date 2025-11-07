@@ -208,6 +208,7 @@ h2 {
     margin: 0;
     padding: 5px 0 5px 10px;
     text-align: center;
+    font-size: 1.7rem;
     color: var(--primary-color);
     background-color: var(--neutral-color);
 }
