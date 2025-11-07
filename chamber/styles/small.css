@@ -22,10 +22,6 @@ Neutral: #FAFAF5 (off white)
     --dark-text: #173625;
 }
 
-html {
-  font-display: swap;
-}
-
 body {
     background-color: var(--neutral-color);
 }
