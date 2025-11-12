@@ -329,8 +329,6 @@ h2 {
     background-color: var(--secondary-color);
 }
 
-
-
 .card {
     display: flex;
     flex-direction: column;
@@ -366,6 +364,15 @@ h2 {
     display: none;
 }
 
+.view-toggle {
+    margin: 10px 0;
+}
+
+.view-toggle button {
+    background-color: var(--neutral-color);
+    color: var(--dark-text);
+}
+
 #list {
     width: 100%;
     background-color: var(--neutral-color);
@@ -376,12 +383,18 @@ h2 {
     border-collapse: collapse;
 }
 
+.list-view thead {
+    background-color: var(--secondary-color);
+    color: var(--dark-text);
+}
+
 .list-view td, .list-view th {
-    border: 1px solid #ccc;
+    border: 1px solid var(--primary-color);
     padding: .5rem;
+    color: var(--dark-text);
 }
 
 .view-toggle button.active {
-    background: #333;
-    color: white;
+    background: var(--dark-text);
+    color: var(--neutral-color);
 }
