@@ -26,3 +26,33 @@ export function renderTable(businesses, clear = false) {
     });
 }
 
+// Helper to set active button style
+export function setActiveButton(btn) {
+  document.querySelectorAll(".view-toggle button").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+}
+
+// Toggle views
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelector("#cards");
+  const list = document.querySelector("#list");
+  const cardViewBtn = document.querySelector("#card-view");
+  const listViewBtn = document.querySelector("#list-view");
+
+  // only add listeners if these buttons exist (directory page only)
+  if (cardViewBtn && listViewBtn && cards && list) {
+    cardViewBtn.addEventListener("click", (e) => {
+      setActiveButton(e.target);
+      cards.classList.remove("hidden");
+      list.classList.add("hidden");
+    });
+
+    listViewBtn.addEventListener("click", (e) => {
+      setActiveButton(e.target);
+      cards.classList.add("hidden");
+      list.classList.remove("hidden");
+    });
+  }
+});
+
+
