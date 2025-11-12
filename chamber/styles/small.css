@@ -212,6 +212,53 @@ h2 {
     color: var(--primary-color);
     background-color: var(--neutral-color);
 }
+/**************************Home page information*****************************/
+
+#info {
+    display: block;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.events h3, .weather h3, .forcast h3 {
+    display: block;
+    margin: 0;
+    padding: 5px 0 5px 0px;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--dark-text);
+    background-color: var(--secondary-color);
+    columns: var(--dark-text);
+    border-bottom: solid 1px var(--primary-color);
+}
+
+.events, .weather, .forcast {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    border: solid 1px var(--primary-color);
+}
+
+.events p, .weather p, .forcast p {
+    margin: 10px;
+    color: var(--primary-color);
+}
+/**************************Spotlight Cards*****************************/
+
+#featured-cards {
+    display: block;
+    gap: 10px;
+    background-color: var(--secondary-color);
+}
+
+.spotlight-card {
+    margin-bottom: 10px;
+}
+
+.spotlight-card h4 {
+    display: show;
+}
+
 /**************************Directory Cards*****************************/
 
 #cards {
@@ -236,6 +283,10 @@ h2 {
     list-style: none;
 }
 
+.card h4 {
+    font-size: small;
+}
+
 .card p, .card a {
     margin: 5px 0;
 }
@@ -256,20 +307,20 @@ h2 {
 
 #list {
     width: 100%;
-  background-color: var(--neutral-color);
+    background-color: var(--neutral-color);
 }
 
 .list-view {
-  width: 100%;
-  border-collapse: collapse;
+    width: 100%;
+    border-collapse: collapse;
 }
 
 .list-view td, .list-view th {
-  border: 1px solid #ccc;
-  padding: .5rem;
+    border: 1px solid #ccc;
+    padding: .5rem;
 }
 
 .view-toggle button.active {
-  background: #333;
-  color: white;
+    background: #333;
+    color: white;
 }
