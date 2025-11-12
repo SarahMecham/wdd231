@@ -23,6 +23,8 @@ Neutral: #FAFAF5 (off white)
 }
 
 body {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size-adjust: 0.5;
     background-color: var(--neutral-color);
 }
 
@@ -146,6 +148,7 @@ header {
 /**************************Footer*****************************/
 footer {
     display: block;
+    min-height: 180px;
     background-color: var(--neutral-color);
     padding: 1rem 10px;
 }
@@ -297,6 +300,7 @@ h2 {
 
 #featured-cards {
     display: block;
+    min-height: 300px;
     gap: 10px;
     background-color: var(--secondary-color);
 }
@@ -307,6 +311,13 @@ h2 {
 
 .spotlight-card h4 {
     display: show;
+}
+
+.featured-cards img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
 }
 
 /**************************Directory Cards*****************************/
