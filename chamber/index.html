@@ -38,8 +38,8 @@
     <!-- JavaScript (deferred) -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
-    <script type="module" src="scripts/directory.mjs" defer></script>
-    <script type="module" src="scripts/weather.mjs" defer></script>
+    <script type="module" src="scripts/directory.mjs"></script>
+    <script type="module" src="scripts/weather.mjs"></script>
 </head>
 <body>
     <header class="header">
@@ -96,10 +96,10 @@
                 <h3>Current Weather</h3>
                 <div class="weather-info">
                     <figure>
-                        <img id="weather-icon" src="" alt="">
+                        <img id="weather-icon">
                     </figure>
                     <p id="current-temp" class="current-temp"></p>
-                    <figcaption id="weather-desc"></figcaption>
+                    <p id="weather-desc"></p>
                     <div id="weather-details" class="weather-details"></div>
                 </div>
             </section>
