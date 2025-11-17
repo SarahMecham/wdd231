@@ -2,6 +2,7 @@
 const courseContainer = document.querySelector(".course-list");
 const filterLinks = document.querySelectorAll(".sub-nav-menu a");
 const creditTotal = document.querySelector(".credit-total");
+const courseDetails = document.querySelector("#course-details");
 
 const courses = [
     {
@@ -90,6 +91,10 @@ function createCourseCard(courseArray) {
     courseArray.forEach(course => {
         let card = document.createElement("section");
         card.classList.add("course-card");
+
+        card.addEventListener("click", () => {
+            displayCourseDetails(course);
+        })
         
         if (course.completed) {
             card.classList.add("completed");
@@ -147,3 +152,22 @@ if (allLink) {
 }
 
 createCourseCard(courses);
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = " ";
+    courseDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits:</strong> ${course.credits}</p>
+        <p><strong>Certificate:</strong> ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies:</strong> ${course.technology.join(", ")}</p>`;
+
+    courseDetails.showModal();
+
+    const closeModal = document.querySelector("#closeModal");
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
