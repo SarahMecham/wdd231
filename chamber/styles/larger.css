@@ -50,8 +50,6 @@
         grid-row: 3 / 4;
     }
 
-    
-
     #featured-cards {
         display: grid;
         grid-template-columns: repeat(3, minmax(220px, 1fr));
@@ -75,5 +73,28 @@
     footer {
         display: grid;
         grid-template-columns: .5fr 1fr .5fr;
+    }
+
+    .join-container {
+        flex-direction: row; 
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .form-column,
+    .cards-column {
+        flex: 1; 
+    }
+
+    .form-column {
+        max-width: 600px;
+    }
+
+    .cards-column {
+        max-width: 600px;
+    }
+
+    .membership-cards {
+        padding-top: 17px;
     }
 }
