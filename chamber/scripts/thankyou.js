@@ -8,4 +8,5 @@ document.querySelector('#results').innerHTML = `
   <div class="result-row"><span class="label">Business/Organization:</span><span class="value">${myInfo.get('orgName')}</span></div>
   <div class="result-row"><span class="label">Membership Requested:</span><span class="value">${myInfo.get('membership')}</span></div>
   <div class="result-row"><span class="label">Business/Organization Details:</span><span class="value">${myInfo.get('description')}</span></div>
+  <div class="result-row"><span class="label">Form Submitted On:</span><span class="value">${new Date(myInfo.get('timeStamp')).toLocaleString()}</span></div>
 `;
