@@ -1,27 +1,32 @@
-* {
-    font-family: 'Roboto', 'Lucida Sans', 'Lucida Grande', Geneva, Verdana, sans-serif;
-    box-sizing: border-box;
-}
-
 :root {
     --primary-color: #2A6041;
     --accent-color: #fde5a8;
     --secondary-color: #D0E2D0;
     --neutral-color: #FAFAF5;
     --dark-text: #173625;
+    --radius: 8px;
+    --gap: 10px;
+    --padding: 10px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Lucida Sans', 'Lucida Grande', Geneva, Verdana, sans-serif;
 }
 
 body {
-    font-family: "Roboto", "Arial", sans-serif;
-    font-size-adjust: 0.5;
     background-color: var(--neutral-color);
+    font-size: 1rem;
+    line-height: 1.5;
 }
 /*********************************Header***********************************/
 header {
     display: grid;
     grid-template-columns: 24px auto 44px;
     grid-template-rows: auto auto;
-    padding: 5px 0 5px 10px;
+    padding: 5px 0 5px var(--padding);
     align-items: center;
     border-bottom: solid 1px var(--secondary-color);
     column-gap: 8px;
@@ -85,7 +90,7 @@ header {
 
 .navigation a {
     display: block;
-    padding: .82rem 10px;
+    padding: .82rem var(--padding);
     color: var(--dark-text);
     text-decoration: none;
     border-bottom: solid 1px var(--secondary-color);
@@ -122,18 +127,18 @@ header {
     top: 80%;
     left: 80%;
     transform: translate(-40%, -80%);
-    padding: 10px 20px;
+    padding: var(--padding) 20px;
     background: var(--accent-color);
     color: var(--dark-text);
     border: none;
-    border-radius: 6px;
+    border-radius: var(--radius);
 }
 /**************************Footer*****************************/
 footer {
     display: block;
     min-height: 180px;
     background-color: var(--neutral-color);
-    padding: 1rem 10px;
+    padding: 1rem var(--padding);
 }
 
 .contact, .author {
@@ -172,7 +177,7 @@ p {
     height: 44px;
     background-color: var(--secondary-color);
     border: solid 1px var(--primary-color);
-    border-radius: 5px;
+    border-radius: var(--radius);
 }
 
 .social a:hover {
@@ -191,7 +196,7 @@ main {
 h2 {
     display: block;
     margin: 10px;
-    padding: 5px 0 5px 10px;
+    padding: 5px 0 5px var(--padding);
     text-align: center;
     font-size: 1.7rem;
     color: var(--primary-color);
@@ -200,7 +205,7 @@ h2 {
 /**************************Home page information*****************************/
 #info {
     display: block;
-    gap: 10px;
+    gap: var(--gap);
     margin-top: 10px;
 }
 
@@ -279,7 +284,7 @@ h2 {
 #featured-cards {
     display: block;
     min-height: 300px;
-    gap: 10px;
+    gap: var(--gap);
     background-color: var(--secondary-color);
 }
 
@@ -288,10 +293,10 @@ h2 {
 }
 
 .featured-cards img {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
 }
 /**************************Directory Cards*****************************/
 #cards {
@@ -308,7 +313,7 @@ h2 {
     text-align: center;
     background-color: var(--neutral-color);
     border: 1px solid var(--primary-color);
-    border-radius: 8px;
+    border-radius: var(--radius);
     padding: 15px;
     box-shadow: 0 2px 8px var(--primary-color);
     list-style: none;
@@ -372,7 +377,7 @@ h2 {
 }
 /**************************Join page form*****************************/
 h5 {
-    padding-left: 10px;
+    padding-left: var(--padding);
     margin-left: 10px;
     color: var(--primary-color);
     font-size: 1.2rem;
@@ -380,16 +385,16 @@ h5 {
 .biz-app {
     max-width: 450px;       
     background: var(--neutral-color);
-    padding: 10px;
-    border-radius: 10px;
+    padding: var(--padding);
+    border-radius: var(--radius);
     margin-left: 10px;
 }
 
 fieldset {
     border: 2px solid var(--primary-color);
-    padding: 10px;
+    padding: var(--padding);
     margin-bottom: 2rem;
-    border-radius: 8px;
+    border-radius: var(--radius);
 }
 
 legend {
@@ -416,7 +421,7 @@ select {
     margin-top: 0.3rem;
     margin-bottom: 1rem;
     border: 1px solid var(--primary-color);
-    border-radius: 6px;
+    border-radius: var(--radius);
     font-size: 1rem;
     background: var(--secondary-color);
 }
@@ -433,7 +438,7 @@ input[type="submit"] {
     color: var(--neutral-color);
     border: none;
     padding: 0.8rem 1.2rem;
-    border-radius: 6px;
+    border-radius: var(--radius);
     font-size: 1rem;
     cursor: pointer;
     
@@ -456,10 +461,10 @@ input[type="submit"]:hover {
 
 .membership-card {
     border: 2px solid var(--primary-color);
-    padding: 10px;
+    padding: var(--padding);
     margin-left: 15px;
     margin-bottom: 1rem;
-    border-radius: 8px;
+    border-radius: var(--radius);
     background-color: var(--secondary-color);
     opacity: 0;
     transform: translateY(50px);
@@ -479,7 +484,7 @@ input[type="submit"]:hover {
     background-color: var(--accent-color);
     border: none;
     padding: 0.5rem 1rem;
-    border-radius: 6px;
+    border-radius: var(--radius);
     cursor: pointer;
 }
 
@@ -493,9 +498,9 @@ dialog {
     background-color: var(--neutral-color);
     color: var(--dark-text);
     border: solid 1px var(--primary-color);
-    border-radius: 8px;
+    border-radius: var(--radius);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    padding: 10px;
+    padding: var(--padding);
 }
 /**************************Thank you page*****************************/
 #results {
