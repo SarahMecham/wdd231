@@ -418,7 +418,7 @@ select {
     border: 1px solid var(--primary-color);
     border-radius: 6px;
     font-size: 1rem;
-    background: #d9ecd9;
+    background: var(--secondary-color);
 }
 
 input:focus,
@@ -430,7 +430,7 @@ select:focus {
 
 input[type="submit"] {
     background: var(--primary-color);
-    color: white;
+    color: var(--neutral-color);
     border: none;
     padding: 0.8rem 1.2rem;
     border-radius: 6px;
@@ -484,7 +484,7 @@ input[type="submit"]:hover {
 }
 
 .membership-card button:hover {
-    background-color: #D0E2D0;
+    background-color: var(--secondary-color);
 }
 
 dialog {
@@ -492,9 +492,9 @@ dialog {
     height: 300px;
     background-color: var(--neutral-color);
     color: var(--dark-text);
-    border: solid 1px #1f4730;
+    border: solid 1px var(--primary-color);
     border-radius: 8px;
-    box-shadow: 5px rgb(0 0 0 / 50%);
+    box-shadow: 5px rgb(0 0 0 0.5);
     padding: 10px;
 }
 /**************************Thank you page*****************************/
