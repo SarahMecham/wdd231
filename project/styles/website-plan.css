@@ -1,0 +1,51 @@
+/****
+Light Blush: #F5E8E4
+
+Dusty Rose: #D6A7A0
+
+Olive Brown: #5A4A42
+
+Deep Espresso: #3A2E2E
+
+Warm Gray: #B6B6B6
+
+Olive Green: #6C7A47
+****/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Lucida Sans', 'Lucida Grande', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #F5E8E4;
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 10px;
+    padding: 10px;
+}
+
+header {
+    display: block;
+    text-align: center;
+    background-color: #D6A7A0;
+    border: 3px solid #5A4A42;
+    color: #3A2E2E;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    margin: 10px 5px;
+    color: #5A4A42;
+}
+
+p {
+    margin: 10px;
+    color: #3A2E2E;
+}
