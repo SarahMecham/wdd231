@@ -1,0 +1,114 @@
+@media only screen and (min-width: 641px) {
+    header, main, nav, footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    header {
+        grid-template-columns: 24px auto 1fr;
+    }
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block !important;
+        background-color: #8FB996;
+        background: none;
+        grid-column: 3/4;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    .hero {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    #info {
+        display:grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .weather-info #weather-desc {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+        margin-left: 10px;
+    }
+
+    .weather-info .weather-details {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+
+    #featured-cards {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(220px, 1fr));
+        gap: 10px;
+        background-color: var(--secondary-color);
+        justify-items: stretch;
+        align-items: stretch;
+        padding: 20px;
+    }
+
+    .card a,
+    .spotlight-card a {
+        display: block;               
+        word-wrap: break-word;        
+        overflow-wrap: anywhere;      
+        text-align: center;           
+        max-width: 100%;              
+        white-space: normal;          
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: .5fr 1fr .5fr;
+    }
+
+    .join-container {
+        flex-direction: row; 
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .form-column,
+    .cards-column {
+        flex: 1; 
+    }
+
+    .form-column {
+        max-width: 600px;
+    }
+
+    .cards-column {
+        max-width: 600px;
+    }
+
+    .membership-cards {
+        padding-top: 17px;
+    }
+
+    .interest-area {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+    }
+
+    .interest-area .card button:hover {
+        background-color: var(--secondary-color);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+}

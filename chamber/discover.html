@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231, Week two Assignment: Chamber of Commerce Directory Page. Information about businesses in South Jordan, Utah are located on this page.">
+    <meta name="author" content="Sarah Mecham">
+    <title>Chamber of Commerce Directory</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Preconnect and preload Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    </noscript>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/medium.css">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Directory page for Chamber of Commerce">
+    <meta property="og:description" content="A directory for all of the registered businesses in South Jordan, Utah.">
+    <meta property="og:image" content="https://sarahmecham.github.io/wdd231/chamber/images/sj-hero-large.webp">
+    <meta property="og:url" content="https://sarahmecham.github.io/wdd231/chamber/directory.html">
+
+    <!-- JavaScript (deferred) -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script type="module" src="scripts/discover.mjs"></script>
+</head>
+
+<body>
+    <header class="header">
+        <img src="images/tree-fill.svg" alt="Site logo" width="16" height="16">
+
+        <div class="header-content">
+            <h1>South Jordan Chamber of Commerce</h1>
+        </div>
+
+        <button 
+            id="ham-btn" 
+            class="hamburger" 
+            aria-label="Open main menu" 
+            aria-expanded="false">
+        </button>
+
+        <nav id="nav-bar" 
+            class="navigation" 
+            aria-label="Main menu"
+            aria-hidden="true">
+            <ul>
+                <li><a href="https://sarahmecham.github.io/wdd231/chamber/index.html">Home</a></li>
+                <li><a href="https://sarahmecham.github.io/wdd231/chamber/directory.html">Directory</a></li>
+                <li><a href="https://sarahmecham.github.io/wdd231/chamber/join.html">Join</a></li>
+                <li><a href="#" class="current">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="welcome" class="welcome"></div>
+        <div id="interest-area" class="interest-area"></div>
+    </main>
+
+    <footer>
+        <div class="contact">
+            <h3>South Jordan Chamber of Commerce</h3>
+            <p>100 South Jordan Pkwy</p>
+            <p>South Jordan, Utah</p>
+            <p>info@southjordan.org</p>
+            <p>(555) 444-3322</p>
+        </div>
+        
+        <div class="social">
+            <a href="https://www.linkedin.com/in/sarah-mecham-475309230/" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16">
+            </a>
+            <a href="https://github.com/SarahMecham" target="_blank">
+                <img src="images/github.svg" alt="GitHub" width="16" height="16">
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/facebook.svg" alt="Facebook" width="16" height="16">
+            </a>
+        </div>
+
+        <div class="author">
+            <p>WDD231 Class Project</p>
+            <p>Sarah Mecham</p>
+            <p>&copy; <span id="currentyear"></span> South Jordan Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+        
+    </footer>
+</body>
+</html>
