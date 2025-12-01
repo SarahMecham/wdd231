@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231, Project: Family History Site">
+    <meta name="author" content="Sarah Mecham">
+    <title>Weaving Our Legacy - Stories</title>
+
+    <!-- Presonnect Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.webp">
+
+    <!-- Preload Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- Preload hero image for LCP -->
+    <link rel="preload" as="image" href="#">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Weaving Our Legacy - Stories">
+    <meta property="og:description" content="Stories and pictures of ancestors on the Dixon and Mecham lines.">
+    <meta property="og:image" content="#">
+    <meta property="og:url" content="https://sarahmecham.github.io/wdd231/project/stories.html">
+
+    <!-- JavaScript (deferred) -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <img src="images/house-heart.svg" alt="Site logo" width="20" height="20">
+
+        <div class="header-content">
+            <h1>Weaving Our Legacy</h1>
+        </div>
+
+        <button 
+            id="ham-btn" 
+            class="hamburger" 
+            aria-label="Open main menu" 
+            aria-expanded="false">
+        </button>
+
+        <nav id="nav-bar" 
+            class="navigation" 
+            aria-label="Main menu"
+            aria-hidden="true">
+            <ul>
+                <li><a href="https://sarahmecham.github.io/wdd231/project/index.html">Home</a></li>
+                <li><a href="https://sarahmecham.github.io/wdd231/project/stories.html" class="current">Stories</a></li>
+                <li><a href="https://sarahmecham.github.io/wdd231/project/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hero">
+        <picture>
+            <source srcset="images/sj-hero-large.webp" media="(min-width: 1000px)">
+            <source srcset="images/sj-hero-medium.webp" media="(min-width: 500px)">
+            <img 
+                src="images/sj-hero-small.webp" 
+                alt="ancestors" 
+                width="1500" 
+                height="750" 
+                fetchpriority="high" 
+                decoding="async">
+        </picture>
+    </div>
+
+    <main>
+        <h2>Stories</h2>
+    </main>
+
+    <footer>
+        <div class="contact">
+            <h3>Sarah Mecham</h3>
+            <p>South Jordan, Utah</p>
+            <p>sarahdmecham@gmail.com</p>
+            <p>(555) 444-3322</p>
+        </div>
+        
+        <div class="social">
+            <a href="https://www.linkedin.com/in/sarah-mecham-475309230/" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16">
+            </a>
+            <a href="https://github.com/SarahMecham" target="_blank">
+                <img src="images/github.svg" alt="GitHub" width="16" height="16">
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/facebook.svg" alt="Facebook" width="16" height="16">
+            </a>
+        </div>
+
+        <div class="author">
+            <p>WDD231 Class Project</p>
+            <p>Sarah Mecham</p>
+            <p>&copy; <span id="currentyear"></span> Family History Site</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

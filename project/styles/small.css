@@ -66,7 +66,7 @@ header {
     height: 32px;
     background: none;
     border: none;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -92,6 +92,8 @@ header {
 .navigation {
     display: none;
     transition: opacity 0.3s ease;
+    grid-column: 1 / -1;
+    width: 98%;
 }
 
 .navigation.show {
@@ -117,8 +119,8 @@ header {
 }
 
 .navigation a:hover, .navigation a:focus {
-    background-color: var(--secondary-color);
-    outline: 3px solid var(--primary-color);
+    background-color: var(--accent-color);
+    outline: 3px solid var(--neutral-color);
     outline-offset: 2px;
 }
 
@@ -171,7 +173,6 @@ p {
     width: 44px;
     height: 44px;
     background-color: var(--secondary-color);
-    border: solid 1px var(--primary-color);
     border-radius: var(--radius);
 }
 
