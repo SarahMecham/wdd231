@@ -1,0 +1,48 @@
+@media only screen and (min-width: 1000px) {
+    header, main, nav, footer {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    header {
+        padding: 10px 20px;
+        grid-template-columns: 64px 1fr auto;
+    }
+
+    .header img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .header-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .navigation ul {
+        gap: 32px;
+    }
+
+    .navigation a {
+        font-size: 1.05rem;
+        padding: 1rem 1.2rem;
+    }
+
+    main {
+        padding: 20px 0;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    footer {
+        grid-template-columns: 1fr 2fr 1fr;
+        padding: 2rem 20px;
+        align-items: center;
+    }
+
+    .contact,
+    .author {
+        font-size: 0.95rem;
+    }
+}
