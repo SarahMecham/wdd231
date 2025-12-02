@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #D6A7A0;
+    --primary-color: #e7b5ad;
     --accent-color: #B6B6B6;
     --secondary-color: #5A4A42;
     --neutral-color: #F5E8E4;
@@ -30,12 +30,12 @@ h1, h2 {
 
 h2 {
     margin: 10px 5px;
-    color: #5A4A42;
+    color: var(--secondary-color);
 }
 
 p {
     margin: 10px;
-    color: #3A2E2E;
+    color: var(--dark-text);
 }
 /*********************************Header***********************************/
 header {
@@ -129,13 +129,27 @@ header {
     text-decoration: underline
 }
 
+/**************************Hero image*****************************/
+.hero {
+    position: relative;
+    border: solid 2px var(--secondary-color);
+}
+
+.hero picture,
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 /**************************Footer*****************************/
 footer {
     display: block;
     min-height: 180px;
     background-color: var(--primary-color);
-    border-top: solid 1px var(--secondary-color);
+    border-top: solid 2px var(--secondary-color);
     padding: 1rem var(--padding);
+    color: var(--dark-text);
 }
 
 .contact, .author {
