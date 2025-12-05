@@ -59,4 +59,17 @@
         margin-top: 0; 
         padding-right: 20px;
     }
+    
+    .question-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 3rem auto;
+        padding: 1rem;
+    }
+
+    .form-column {
+        width: 100%;
+    }
 }
