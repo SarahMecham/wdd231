@@ -16,13 +16,18 @@ async function loadSpotlight() {
     const lat = parseFloat(randomMember.lat);
     const lng = parseFloat(randomMember.lng);
 
-    const map = L.map("birth-map").setView([lat, lng], 10);
+    if (window.L) {
+        const map = L.map("birth-map").setView([lat, lng], 10);
 
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        attribution: "&copy; OpenStreetMap contributors"
-    }).addTo(map);
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+            attribution: "&copy; OpenStreetMap contributors"
+            }).addTo(map);
 
-    L.marker([lat, lng]).addTo(map).bindPopup(`<strong>${randomMember.name}</strong><br>${randomMember.birthplace}`).openPopup();
+        L.marker([lat, lng])
+            .addTo(map)
+            .bindPopup(`<strong>${randomMember.name}</strong><br>${randomMember.birthplace}`)
+            .openPopup();
+        }
 
 }
 
