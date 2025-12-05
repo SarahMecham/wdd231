@@ -1,41 +1,44 @@
-export function createStoryCard(business) {
+export function createStoryCard(family) {
     const card = document.createElement("section");
     card.classList.add("card");
 
     const image = document.createElement("img");
     const name = document.createElement("h3");
     const dates = document.createElement("h4");
-    const story = document.createElement("p");
+    const button = document.createElement("button");
 
-    image.src = business.image;
-    image.alt = business.name;
+    image.src = family.image;
+    image.alt = family.name;
     image.loading = "lazy";
-    image.width = 190;
-    image.height = 100;
+    image.width = 200;
+    image.height = 300;
 
-    name.textContent = business.name;
-    address.textContent = business.address;
-    phone.textContent = business.phone;
+    name.textContent = family.name;
+    dates.textContent = family.dates;
+    button.textContent = "View Story";
 
-    website.href = business.website;
-    website.textContent = business.website;
-    website.target = "_blank";
-  
-    level.textContent = 
-        business.level === 3
-        ? "Gold Member"
-        : business.level === 2
-        ? "Silver Member"
-        : ""; 
+    button.addEventListener("click", () => {
+        const modal = document.querySelector("#story-modal");
+        const modalName = document.querySelector("#modal-name");
+        const modalDates = document.querySelector("#modal-dates");
+        const modalBplace = document.querySelector("#modal-bplace");
+        const modalDplace = document.querySelector("#modal-dplace");
+        const modalStory = document.querySelector("#modal-story");
+
+        modalName.textContent = family.name;
+        modalDates.textContent = family.dates;
+        modalBplace.innerHTML = `Birthplace: ${family.birthplace}`;
+        modalDplace.innerHTML = `Deathplace: ${family.deathplace}`;
+        modalStory.textContent = family.story;
+
+        modal.classList.remove("hidden");
+    })
+
 
     card.append(image);
     card.append(name);
-
-    if (level.textContent) {
-        card.append(level);
-    }
-
-    card.append(address, phone, website);
+    card.append(dates);
+    card.append(button);
 
     return card;
 }

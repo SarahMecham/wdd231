@@ -38,6 +38,7 @@
     <!-- JavaScript (deferred) -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
+    <script type="module" src="scripts/family.mjs"></script>
 </head>
 <body>
     <header class="header">
@@ -68,6 +69,17 @@
 
     <main>
         <h2>Stories</h2>
+        <div id="cards" class="cards"></div>
+        <div id="story-modal" class="modal hidden">
+            <div class="modal-content">
+                <span id="close-modal">&times;</span>
+                <h3 id="modal-name"></h3>
+                <h4 id="modal-dates"></h4>
+                <h5 id="modal-bplace"></h5>
+                <h5 id="modal-dplace"></h5>
+                <p id="modal-story"></p>
+            </div>
+        </div>
     </main>
 
     <footer>
