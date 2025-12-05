@@ -242,15 +242,15 @@ p {
 .modal-content {
     background: var(--neutral-color);
     color: var(--dark-text);
-    padding: 2rem;
     max-width: 600px;
     width: 90%;
-    max-height: 80vh;
     overflow-y: auto;
     border-radius: 12px;
     position: relative;
     text-align: center;
     scroll-behavior: smooth;
+    max-height: 90vh;
+    padding: 1.5rem;
 }
 
 #close-modal {
