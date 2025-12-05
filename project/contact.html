@@ -68,6 +68,71 @@
 
     <main>
         <h2>Contact</h2>
+        <div class="question-container">
+            <div class="question-column form-column">
+                <h3>Questions or Insights to Share</h3>
+
+                <form method="get" action="thankyou.html" class="q-a">
+                    <fieldset>
+                        <legend>Requestor Information</legend>
+                        <p><em>* Indicates required fields</em></p>
+                        <label for="firstName">First Name* </label>
+                        <input type="text" id="firstName" name="firstName" title="Please enter your first name." autocomplete="given-name" required>
+                        <label for="lastName">Last Name* </label>
+                        <input type="text" id="lastName" name="lastName" autocomplete="family-name" required>
+                        <label for="email">Email* </label>
+                        <input type="email" id="email" name="email" title="Please enter your email." autocomplete="email" placeholder="someone@gmail.com" required>
+                        <label for="phone">Phone* </label>
+                        <input type="tel" id="phone" name="phone" title="Please enter your phone number." autocomplete="tel" placeholder="1235551234" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Family Line</legend>
+                        <label><input type="radio"  name="family" value="Mecham" required>Mecham family</label>
+                        <label><input type="radio"  name="family" value="Austin">Austin family</label>
+                        <label><input type="radio"  name="family" value="Dixon">Dixon family</label>
+                        <label><input type="radio"  name="family" value="Hendrix">Hendrix family</label>
+                        <label><input type="radio"  name="family" value="Other">Other family</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Question/Insight</legend>
+                        <label for="question">Type your question here</label>
+                        <textarea name="question" id="question" title="Please type your question here." rows="5"></textarea>
+                    </fieldset>
+
+                    <input type="hidden" id="timeStamp" name="timeStamp">
+
+                    <input type="submit" value="Submit Question">
+
+                </form> 
+            </div>
+            <div class="question-column story-column">
+                <h3>Share a Story</h3>
+                <form method="get" action="thankyou.html" class="story">
+                    <fieldset>
+                        <legend>Story Teller Information</legend>
+                        <p><em>* Indicates required fields</em></p>
+                        <label for="firstName">First Name* </label>
+                        <input type="text" id="firstName" name="firstName" title="Please enter your first name." autocomplete="given-name" required>
+                        <label for="lastName">Last Name* </label>
+                        <input type="text" id="lastName" name="lastName" autocomplete="family-name" required>
+                        <label for="email">Email* </label>
+                        <input type="email" id="email" name="email" title="Please enter your email." autocomplete="email" placeholder="someone@gmail.com" required>
+                        <label for="phone">Phone* </label>
+                        <input type="tel" id="phone" name="phone" title="Please enter your phone number." autocomplete="tel" placeholder="1235551234" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Story</legend>
+                        <label for="story">Type your story here</label>
+                        <textarea name="story" id="story" title="Please type your story here." rows="20"></textarea>
+                    </fieldset>
+
+                    <input type="submit" value="Submit Story">
+                </form>
+            </div>
+        </div>
     </main>
 
     <footer>

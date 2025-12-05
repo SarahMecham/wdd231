@@ -336,6 +336,133 @@ p {
     border: 3px solid var(--secondary-color);
     outline: 4px solid var(--dark-text);
     outline-offset: 4px;
- 
     box-sizing: border-box;
 }
+
+/**************************Contact page form*****************************/
+
+.question-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.form-column,
+.story-column {
+    padding: 1rem;
+    border: 3px solid var(--secondary-color);
+    border-radius: 10px;
+}
+
+.q-a, .story {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.q-a fieldset,
+.story fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    background-color: var(--neutral-color);
+}
+
+.q-a legend, 
+.story legend {
+    font-weight: bold;
+    padding: 0 0.5rem;
+    color: var(--dark-text);
+}
+
+.q-a > fieldset > label,
+.story > fieldset > label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+    color: var(--dark-text);
+}
+
+.q-a input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]),
+.q-a textarea,
+.story input,
+.story textarea {
+    width: 100%;
+    padding: 0.65rem;
+    margin-top: 0.25rem;
+    border-radius: 6px;
+    border: 2px solid var(--secondary-color);
+    font-size: 1rem;
+    background: #fff;
+    color: var(--dark-text);
+}
+
+.q-a input:not([type="radio"]):not([type="checkbox"]):focus,
+.q-a textarea:focus, 
+.story input:focus,
+.story textarea:focus {
+    outline: 3px solid var(--dark-text);
+    outline-offset: 2px;
+}
+
+.q-a fieldset:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-top: 0.5rem;
+}
+
+.q-a fieldset:nth-of-type(2) label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.6rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 0;
+}
+
+.q-a fieldset:nth-of-type(2) input[type="radio"] {
+     width: auto;          
+    height: auto;
+    margin: 0;
+    flex-shrink: 0;
+    transform: scale(1.05);
+}
+
+.q-a fieldset:nth-of-type(2) input[type="radio"]:focus {
+    outline: 3px solid var(--dark-text);
+    outline-offset: 2px;
+}
+
+.q-a em
+.story em {
+    font-weight: bold;
+}
+
+.q-a input[type="submit"],
+.story input[type="submit"] {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    border: 1.5px solid var(--secondary-color);
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: var(--dark-text);
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.q-a input[type="submit"]:hover,
+.q-a input[type="submit"]:focus,
+.story input[type="submit"]:hover,
+.story input[type="submit"]:focus {
+    background-color: var(--accent-color);
+    outline: 3px solid var(--neutral-color);
+}
+
