@@ -39,6 +39,11 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
     <script type="module" src="scripts/spotlight.mjs"></script>
+
+    <!-- Map API -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
 </head>
 <body>
     <header class="header">
@@ -81,15 +86,24 @@
     </div>
 
     <main>
-        <h2>Home</h2>
-        <section class="spotlight">
-            <img id="spotlight-img" alt="">
+        <div class="home">
+            <h2>Home</h2>
+        </div>
+        <section class="spotlight-wrapper">
+            <section class="spotlight">
+                <img id="spotlight-img" alt="">
         
-            <div class="spotlight-info">
-                <h3 id="spotlight-name"></h3>
-                <h4 id="spotlight-dates"></h4>
-                <p id="spotlight-story"></p>
-            </div>
+                <div class="spotlight-info">
+                    <h3 id="spotlight-name"></h3>
+                    <h4 id="spotlight-dates"></h4>
+                    <p id="spotlight-story"></p>
+                </div>
+            </section>
+
+            <section class="birthplace-map">
+                <h3>Birthplace</h3>
+                <div id="birth-map"></div>
+            </section>
         </section>
     </main>
 

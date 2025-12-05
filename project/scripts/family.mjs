@@ -13,9 +13,6 @@ async function getStoryData() {
         const card = createStoryCard(member);
         cardsContainer.appendChild(card);
     });
-
-  // Spotlight on Index
-  //spotlightBusinesses(businesses);
 }
 
 getStoryData();

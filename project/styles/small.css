@@ -279,6 +279,12 @@ p {
 
 /**************************Home page spotlight*****************************/
 
+.spotlight-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
 .spotlight {
     display: grid;
     grid-template-columns: 1fr;
@@ -309,4 +315,27 @@ p {
     max-height: 250px;   
     overflow-y: auto;   
     padding-right: 0.5rem;
+}
+
+.birthplace-map {
+    width: 100%;
+    padding: 0 1rem;         
+    box-sizing: border-box;
+}
+
+.birthplace-map h3 {
+    text-align: center;
+    color: var(--dark-text);
+}
+
+#birth-map {
+    height: 350px;
+    width: 100%;
+    max-width: 900px;
+    margin: 10px auto 1rem auto;
+    border: 3px solid var(--secondary-color);
+    outline: 4px solid var(--dark-text);
+    outline-offset: 4px;
+ 
+    box-sizing: border-box;
 }
