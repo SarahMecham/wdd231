@@ -38,6 +38,7 @@
     <!-- JavaScript (deferred) -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
+    <script type="module" src="scripts/spotlight.mjs"></script>
 </head>
 <body>
     <header class="header">
@@ -60,8 +61,8 @@
             aria-hidden="true">
             <ul>
                 <li><a href="https://sarahmecham.github.io/wdd231/project/index.html" class="current">Home</a></li>
-                <li><a href="#">Stories</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="https://sarahmecham.github.io/wdd231/project/stories.html">Stories</a></li>
+                <li><a href="https://sarahmecham.github.io/wdd231/project/contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -81,14 +82,15 @@
 
     <main>
         <h2>Home</h2>
-        <div id="info">
-            <section id="featured-story" class="featured-story">
-                <h3>Feature</h3>
-            </section>
-
-            <figure id="image" class="image">
-            </figure>
-        </div>
+        <section class="spotlight">
+            <img id="spotlight-img" alt="">
+        
+            <div class="spotlight-info">
+                <h3 id="spotlight-name"></h3>
+                <h4 id="spotlight-dates"></h4>
+                <p id="spotlight-story"></p>
+            </div>
+        </section>
     </main>
 
     <footer>

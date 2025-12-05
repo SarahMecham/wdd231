@@ -58,7 +58,12 @@
     }
 
     .modal-content {
-    padding: 2rem;
-    max-height: 80vh;
+        padding: 2rem;
+        max-height: 80vh;
+    }
+
+    .spotlight {
+        grid-template-columns: 250px 1fr;
+        border-radius: 16px;
     }
 }
