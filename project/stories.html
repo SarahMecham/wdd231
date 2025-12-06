@@ -22,9 +22,6 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
 
-    <!-- Preload hero image for LCP -->
-    <link rel="preload" as="image" href="https://sarahmecham.github.io/wdd231/project/images/ancestors-hero-large.webp">
-
     <!-- Open Graph -->
     <meta property="og:title" content="Weaving Our Legacy - Stories of Dixon and Mecham ancestors.">
     <meta property="og:description" content="Stories and pictures of ancestors on the Dixon and Mecham lines.">
@@ -85,7 +82,7 @@
         <div id="cards" class="cards"></div>
         <div id="story-modal" class="modal hidden">
             <div class="modal-content">
-                <span id="close-modal">&times;</span>
+                <button id="close-modal" aria-label="Close story">×</button>
                 <h3 id="modal-name"></h3>
                 <h4 id="modal-dates"></h4>
                 <h5 id="modal-bplace"></h5>

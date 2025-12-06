@@ -71,13 +71,15 @@ window.addEventListener("click", (event) => {
 
 getStoryData();
 
-const filterBtn = document.querySelector("#filter-ham-btn");
-const subNav = document.querySelector(".sub-nav-menu");
+window.addEventListener("DOMContentLoaded", () => {
+    const filterBtn = document.querySelector("#filter-ham-btn");
+    const subNav = document.querySelector(".sub-nav-menu");
 
-filterBtn.addEventListener("click", () => {
-    const isOpen = subNav.classList.toggle("show");
+    filterBtn.addEventListener("click", () => {
+        const isOpen = subNav.classList.toggle("show");
 
-    filterBtn.classList.toggle("show");
-    filterBtn.setAttribute("aria-expanded", isOpen);
-    subNav.setAttribute("aria-hidden", !isOpen);
+        filterBtn.classList.toggle("show");
+        filterBtn.setAttribute("aria-expanded", isOpen);
+        subNav.setAttribute("aria-hidden", !isOpen);
+    });
 });

@@ -10,6 +10,7 @@ export function createStoryCard(family) {
     image.src = family.image;
     image.alt = family.name;
     image.loading = "lazy";
+    image.decoding = "async";
     image.width = 200;
     image.height = 300;
 
