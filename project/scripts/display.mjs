@@ -27,18 +27,13 @@ export function createStoryCard(family) {
 
         modalName.textContent = family.name;
         modalDates.textContent = family.dates;
-        modalBplace.innerHTML = `Birthplace: ${family.birthplace}`;
-        modalDplace.innerHTML = `Deathplace: ${family.deathplace}`;
+        modalBplace.textContent = `Birthplace: ${family.birthplace}`;
+        modalDplace.textContent = `Deathplace: ${family.deathplace}`;
         modalStory.textContent = family.story;
 
         modal.classList.remove("hidden");
-    })
+    });
 
-
-    card.append(image);
-    card.append(name);
-    card.append(dates);
-    card.append(button);
-
+    card.append(image, name, dates, button);
     return card;
 }

@@ -43,6 +43,23 @@
         border: none;
     }
 
+    .sub-nav-menu {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 100%;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .sub-nav-menu a {
+        border-bottom: none;
+    }
+
+    #filter-ham-btn {
+        display: none;
+    }
+
     footer {
         display: grid;
         grid-template-columns: .5fr 1fr .5fr;

@@ -103,11 +103,19 @@ header {
 
 .navigation ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
-.navigation a {
+/************** Shared Navigation Styles **************/
+.navigation,
+.sub-nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.navigation a,
+.sub-nav-menu a {
     display: block;
     padding: .82rem var(--padding);
     color: var(--dark-text);
@@ -115,19 +123,39 @@ header {
     border-bottom: solid 1px var(--secondary-color);
 }
 
-.navigation li.current {
-    background-color: var(--neutral-color);
-}
-
-.navigation a:hover, .navigation a:focus {
+.navigation a:hover,
+.navigation a:focus,
+.sub-nav-menu a:hover,
+.sub-nav-menu a:focus {
     background-color: var(--accent-color);
     outline: 3px solid var(--neutral-color);
     outline-offset: 2px;
 }
 
-.navigation a.current {
+.navigation a.current,
+.sub-nav-menu a.active {
     font-weight: bold;
-    text-decoration: underline
+    text-decoration: underline;
+    background-color: var(--neutral-color);
+}
+
+/*********************** Sub Navigation ***********************/
+.sub-nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.sub-nav-menu.show {
+    display: flex;
+}
+
+.stories-layout {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 1rem;
+    align-items: start;
 }
 
 /**************************Footer*****************************/
