@@ -339,6 +339,18 @@ p {
     box-sizing: border-box;
 }
 
+.leaflet-popup-close-button {
+    color: var(--dark-text) !important;      
+    font-weight: bold !important;
+    text-shadow: none !important;     
+    background: #fff !important;      
+    border-radius: 50% !important;
+}
+
+.leaflet-popup-close-button::after {
+    font-size: 1.2rem !important;
+}
+
 /**************************Contact page form*****************************/
 
 .question-container {
