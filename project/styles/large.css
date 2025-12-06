@@ -45,20 +45,6 @@
     .author {
         font-size: 0.95rem;
     }
-
-    .spotlight-wrapper {
-        grid-template-columns: 2fr 1fr;
-        align-items: start;
-    }
-
-    .birthplace-map h3 {
-        margin-top: 20px;
-    }
-
-    .birth-map-section {
-        margin-top: 0; 
-        padding-right: 20px;
-    }
     
     .question-container {
         display: grid;
