@@ -7,10 +7,6 @@
     <meta name="author" content="Sarah Mecham">
     <title>Weaving Our Legacy - Home</title>
 
-    <!-- Presonnect Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon.webp">
@@ -22,12 +18,12 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/main.css">
 
     <!-- Preload hero image for LCP -->
-    <link rel="preload" as="image" href="images/ancestors-hero-small.webp">
+    <link rel="preload" as="image" href="images/ancestors-hero-large.webp" media="(min-width: 1000px)">
+    <link rel="preload" as="image" href="images/ancestors-hero-small.webp" media="(max-width: 999px)">
+
 
     <!-- Open Graph -->
     <meta property="og:title" content="Weaving Our Legacy">
@@ -36,8 +32,7 @@
     <meta property="og:url" content="https://sarahmecham.github.io/wdd231/project/index.html">
 
     <!-- Map API -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
 
     <!-- JavaScript (deferred) -->
     <script src="scripts/navigation.js" defer></script>
@@ -91,7 +86,7 @@
         </div>
         <section class="spotlight-wrapper">
             <section class="spotlight">
-                <img id="spotlight-img" alt="Featured family member portrait">
+                <img id="spotlight-img" alt="Featured family member portrait" loading="lazy" decoding="async">
         
                 <div class="spotlight-info">
                     <h3 id="spotlight-name"></h3>

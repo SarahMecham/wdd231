@@ -30,26 +30,55 @@ async function loadSpotlight() {
             storyEl.textContent = randomMember.story;
         }
 
-        if (window.L && randomMember.lat && randomMember.lng) {
+        async function loadLeaflet() {
+            if (window.L) return;
+
+            const link = document.createElement("link");
+            link.rel = "stylesheet";
+            link.href = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css";
+            document.head.appendChild(link);
+
+            const script = document.createElement("script");
+            script.src = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js";
+            script.defer = true;
+            document.body.appendChild(script);
+
+            return new Promise(resolve => {
+                script.onload = resolve;
+            });
+        }
+        if (randomMember.lat && randomMember.lng) {
             const lat = parseFloat(randomMember.lat);
             const lng = parseFloat(randomMember.lng);
 
-            const map = L.map("birth-map").setView([lat, lng], 10);
+            const mapContainer = document.getElementById("birth-map");
 
-            L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-                attribution: "&copy; OpenStreetMap contributors"
-            }).addTo(map);
+            const observer = new IntersectionObserver(async (entries) => {
+                if (!entries[0].isIntersecting) return;
 
-            L.marker([lat, lng])
-                .addTo(map)
-                .bindPopup(`<strong>${randomMember.name}</strong><br>${randomMember.birthplace}`)
-                .openPopup();
+                observer.disconnect();
+                await loadLeaflet();
+
+                const map = L.map(mapContainer).setView([lat, lng], 10);
+
+                L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+                    attribution: "&copy; OpenStreetMap contributors"
+                }).addTo(map);
+
+                L.marker([lat, lng])
+                    .addTo(map)
+                    .bindPopup(`<strong>${randomMember.name}</strong><br>${randomMember.birthplace}`)
+                    .openPopup();
+
+            });
+
+            observer.observe(mapContainer);
         }
     } catch (error) {
         console.error("Failed to load spotlight data:", error);
         const storyEl = document.querySelector("#spotlight-story");
         if (storyEl) storyEl.textContent = "Sorry, we couldn't load the spotlight member at this time.";
-    }
+    }   
 }
 
 loadSpotlight();
